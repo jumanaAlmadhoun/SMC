@@ -1,0 +1,287 @@
+/** {
+    box-sizing: border-box;
+    outline: 3px solid lightcoral !important;
+}*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'causten';
+}
+
+.container {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    column-gap: 50px;
+    row-gap: 60px;
+    justify-content: center;
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    grid-template-areas:
+        "box2 box2 box2"
+        "box3 box4 box5"
+        "box6 box7 box8"
+    ;
+}
+
+.footer-widget-heading h3 {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    //left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 80px;
+    background: #007933;
+}
+
+
+
+.box2 {
+    grid-area: box2;
+    height: 50px;
+    max-width: 100%;
+    background-color: white;
+    padding: 0;
+    font-size: 50px;
+
+}
+
+
+.box3 {
+    grid-area: box3;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+
+
+
+.box4 {
+    grid-area: box4;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+
+
+
+.box5 {
+    grid-area: box5;
+    // grid-row-start: 3;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+.box6 {
+    grid-area: box6;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+
+.box7 {
+    grid-area: box7;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+
+.box8 {
+    grid-area: box8;
+    position: relative;
+    height: 180px;
+    width: 411px;
+}
+
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/*.EventsImg:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}*/
+
+.EventsImg {
+    transition: 1s;
+    position: relative;
+    height: 173.04px;
+    width: 411;
+    //border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        column-gap: 50px;
+        row-gap: 80px;
+        justify-content: center;
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-template-areas:
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+        ;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        column-gap: 50px;
+        row-gap: 80px;
+        justify-content: center;
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        grid-template-areas:
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+        ;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+
+    .footer-widget-heading h3 {
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .footer-widget-heading h3::before {
+        content: "";
+        position: absolute;
+        // left: 0;
+        bottom: -8px;
+        height: 2px;
+        width: 80px;
+        background: #007933;
+    }
+
+
+    .box2 {
+        grid-area: box2;
+        height: 50px;
+        max-width: 100%;
+        background-color: white;
+        padding: 0;
+        font-size: 50px;
+
+    }
+
+
+    .box3 {
+        grid-area: box3;
+        // position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+
+
+
+    .box4 {
+        grid-area: box4;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+
+
+
+    .box5 {
+        grid-area: box5;
+        // grid-row-start: 3;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+    .box6 {
+        grid-area: box6;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+
+    .box7 {
+        grid-area: box7;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+
+    .box8 {
+        grid-area: box8;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        justify-self: center;
+    }
+
+
+
+    .EventsImg {
+        transition: 1s;
+        position: relative;
+        height: 173.04px;
+        width: 270px;
+        //border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+
+}

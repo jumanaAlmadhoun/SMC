@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.hero {
+    max-width: 100%;
+    height: 98vh;
+    position: relative;
+}
+
+
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    //z-index: -1;
+}
+
+/*
+@media (min-aspect-ratio: 30/19) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    max-width: 100%;
+    display: flex;
+    //text-align: left;
+    //align-items: center;
+    justify-content: start;
+    // justify-content: center;
+    //justify-content: space-between;
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+
+
+.out {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Causten';
+}
+
+
+
+
+.out:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.1s;
+}
+
+.out:hover {
+    color: #ffffff;
+}
+
+
+.out:hover:after {
+    width: 100%;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    position: relative;
+    width: 150px;
+    content: url('/assets/images/White logo.png');
+    z-index: 1;
+}
+
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    max-width: 100%;
+    gap: 3.5em;
+    font-size: 18px;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+
+.services:hover .dropdown {
+    display: block;
+    //  display: inline-block;
+}
+
+.dropdown {
+    //z-index: 1;
+    background-color: #333;
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    white-space: nowrap;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+    white-space: normal;
+    overflow: visible;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 28px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 767px) {
+
+
+    .services:hover .dropdown {
+        display: contents;
+        //  display: inline-block;
+    }
+
+
+
+    .hero {
+        width: 100%;
+        height: 25vh;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        //  position: relative;
+    }
+
+    .back-video {
+        position: absolute;
+        max-width: 100%;
+        min-height: 108%;
+        right: 0;
+        bottom: 0;
+        // z-index: -1;
+    }
+
+
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        // z-index: -1;
+    }
+
+
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 20px 0;
+        z-index: 1;
+    }
+
+    .out {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-family: 'Causten';
+    }
+
+    .out:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        transition: 0.1s;
+    }
+
+    .out:hover {
+        color: black;
+    }
+
+
+    .navbar {
+        max-width: 100%;
+        display: flex;
+        //text-align: left;
+        //align-items: center;
+        // justify-content: start;
+        // justify-content: center;
+        justify-content: space-between;
+        color: #fff;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .nav-links a {
+        color: black;
+    }
+
+
+
+
+
+
+    .menu li:hover {
+        background-color: white;
+    }
+
+    .out:hover:after {
+        width: 0%;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        z-index: 1;
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #555;
+    }
+
+    /*
+    .back-video {
+        width: auto;
+        height: 100%;
+    }*/
+
+}
+
+@media (min-aspect-ratio: 30/19) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.header_change {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+
+    .out {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-family: 'Causten';
+    }
+
+    .out:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        transition: 0.1s;
+    }
+
+    .out:hover {
+        color: black;
+    }
+
+    .out:hover:after {
+        width: 100%;
+    }
+
+    .logo {
+        position: relative;
+        width: 150px;
+        content: url('/assets/images/smc-logo.png');
+        z-index: -1;
+    }
+
+
+
+    .hamburger {
+        color: black;
+    }
+
+    @media (max-width: 767px) {
+        .navbar {
+            max-width: 100%;
+            display: flex;
+            //text-align: left;
+            //align-items: center;
+            // justify-content: start;
+            // justify-content: center;
+            justify-content: space-between;
+            color: #fff;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding: 20px 0;
+        }
+
+        .out:hover:after {
+            width: 0%;
+        }
+
+
+    }
+
+}

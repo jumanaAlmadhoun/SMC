@@ -1,0 +1,90 @@
+<div class="hero">
+  <video autoplay="autoplay" loop muted oncanplay="this.play()" onloadedmetadata="this.muted=true" playsinline
+    class="back-video">
+    <source drl="ltr" src="assets/images/SMC_.mp4" type="video/mp4">
+  </video>-
+  <header [class.header_change]="header_variable">
+    <nav class="navbar">
+      <!-- LOGO -->
+      <a routerLink="/home">
+        <img class="logo" alt="" />
+      </a>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+
+        <div class="menu">
+          <li><a routerLink="/home" class="out"> {{"HOME"|translate}} </a></li>
+
+          <li class="services">
+            <a class="out"> {{"SAGP"|translate}} <i class="fas fa-angle-down"></i> </a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+
+              <li><a href="https://www.saudiarabiangp.com/" target=”_blank”>{{"F1"|translate}}</a></li>
+              <li><a href="https://www.saudiarabiangp.com/" target=”_blank”>{{"F2"|translate}}</a></li>
+            </ul>
+          </li>
+
+
+
+
+
+
+          <li class="services">
+            <a class="out">{{"RALLIES"|translate}} <i class="fas fa-angle-down"></i> </a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a routerLink="/dakar">{{"DAKAR"|translate}}</a></li>
+              <li><a routerLink="/wrc">{{"WRC"|translate}}</a></li>
+              <li><a routerLink="/saudi-rallies">{{"SAUDI-RALLIES"|translate}}</a></li>
+            </ul>
+          </li>
+
+
+
+
+
+          <li class="services">
+            <a class="out">{{"ELECTRIC SPORTS"|translate}} <i class="fas fa-angle-down"></i> </a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a routerLink="/formulaE">{{"FORMULA-E"|translate}}</a></li>
+              <li><a routerLink="/extremeE">{{"EXTREME-E"|translate}}</a></li>
+            </ul>
+          </li>
+
+
+
+
+          <!-- <li class="services">
+          <a class="out" href="/">JCC</a>
+          <ul class="dropdown">
+            <li><a href="#">Saudi Automobile Club</a></li>
+            <li><a href="#">Saudi Young Stars</a></li>
+            <li><a href="#">E-Karting</a></li>
+            <li><a href="#">World Touring Car Cup</a></li>
+          </ul>
+        </li>-->
+
+          <li><a class="out" routerLink="/news">{{"NEWS"|translate}}</a></li>
+          <li><a class="out" routerLink="/about-us">{{"ABOUT US"|translate}}</a></li>
+          <li>
+            <a (click)="changeCurrentLang()" class="out" routerLink="/"> {{"lang"|translate}} </a>
+          </li>
+        </div>
+      </ul>
+
+
+
+
+
+
+
+    </nav>
+  </header>
+</div>

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Causten";
+  src: local("Causten"), url(./assets/fonts/Eng/Causten/Causten-Medium.otf) format("truetype");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+
+    <div class="box1 footer-widget-heading" data-aos="fade-down" data-aos-offset="300">
+        <h3> {{"NEWS TITEL"|translate}}</h3>
+    </div>
+
+    <div class="box2" data-aos="fade-down" data-aos-offset="300">
+        <P>
+            {{"NEWS CONT"|translate}}
+        </P>
+        <!-- <p>
+            The Jeddah Corniche Circuit service roads and surrounding streets from the south of the circuit to the
+            Jeddah Yacht Club are now open to the public in the summer. To facilitate traffic in front of the waterfront
+            area, the bridges surrounding the circuit will be opened.
+        </p>-->
+    </div>
+
+    <div class="box3" data-aos="fade-down" data-aos-offset="300">
+        <img class="img" src="assets/images/map.jpeg" alt="" />
+    </div>
+
+
+    <header [class.backbar_change]="backbar_variable">
+        <div class="backbar" data-aos="fade-down" data-aos-offset="300">
+            <a routerLink="/news"> &#171; {{"back"|translate}}</a>
+        </div>
+    </header>
+
+
+</div>
+<app-footer></app-footer>

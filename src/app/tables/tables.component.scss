@@ -1,0 +1,335 @@
+* {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.container {
+    //border-top: 3px solid #009733;
+    row-gap: 15px;
+    column-gap: 15px;
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+    grid-template-areas:
+        "boxVision boxVision"
+        "box1 box2"
+        "box3 box4"
+    ;
+    justify-content: center;
+
+}
+
+.boxVision {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-area: boxVision;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 80px;
+    background: #007933;
+}
+
+.box1 {
+    grid-area: box1;
+    display: flex;
+    justify-content: end;
+}
+
+.box2 {
+    grid-area: box2;
+    display: flex;
+}
+
+.box3 {
+    grid-area: box3;
+    display: flex;
+    justify-content: end;
+}
+
+.box4 {
+    grid-area: box4;
+    display: flex;
+}
+
+.EventsImg {
+    z-index: -1;
+    display: block;
+    height: 456px;
+    width: 683px;
+    justify-content: center;
+}
+
+
+.content1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Causten';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.content2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Causten';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 0.8;
+}
+
+
+
+
+.test {
+    position: absolute;
+    height: 456px;
+    width: 683px;
+    opacity: 30%;
+    transition: .5s ease;
+    background-color: #050505;
+}
+
+
+.overlay {
+    position: absolute;
+    height: 456px;
+    width: 683px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #009733;
+}
+
+
+.box1:hover .overlay {
+    opacity: 20%;
+}
+
+.box2:hover .overlay {
+    opacity: 20%;
+}
+
+.box3:hover .overlay {
+    opacity: 20%;
+}
+
+.box4:hover .overlay {
+    opacity: 20%;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        justify-content: center;
+        row-gap: 15px;
+        column-gap: 15px;
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        margin-top: 18px;
+        padding: 50px;
+        grid-template-areas:
+            "boxVision"
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+        ;
+    }
+
+    .content1 {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+        font-family: 'Causten';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    .content2 {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 800;
+        font-family: 'Causten';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    h3::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        height: 2px;
+        width: 70px;
+        background: #007933;
+    }
+
+
+    h3 {
+        font-size: 0.7em;
+    }
+
+    p {
+        position: relative;
+        font-size: 0.5em;
+    }
+
+
+    .EventsImg {
+        z-index: -1;
+        display: block;
+        height: 336px;
+        width: 683px;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+    .container {
+        justify-content: center;
+        row-gap: 15px;
+        column-gap: 15px;
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        padding: 50px;
+        padding-top: 0px;
+        grid-template-areas:
+            "boxVision"
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+        ;
+    }
+
+    .boxVision {
+        grid-area: boxVision;
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+
+    h3 {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.7em;
+        white-space: normal;
+        overflow: visible;
+    }
+
+    .EventsImg {
+        display: block;
+        height: 256px;
+        width: auto;
+    }
+
+    .content1 {
+        font-size: 25px;
+        color: #fff;
+        font-weight: 800;
+        font-family: 'Causten';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    .content2 {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 800;
+        font-family: 'Causten';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    h3::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        height: 1px;
+        width: 80px;
+        background: #007933;
+    }
+
+
+
+}

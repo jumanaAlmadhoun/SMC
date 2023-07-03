@@ -1,0 +1,27 @@
+.container {
+    max-width: 100%;
+    height: auto;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.text {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    line-height: 35px;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Causten';
+    font-size: 30px;
+}
